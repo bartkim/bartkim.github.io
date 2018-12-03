@@ -1,3 +1,4 @@
+{% include head.html %}
 ## Welcome to GitHub Pages
 
 $
