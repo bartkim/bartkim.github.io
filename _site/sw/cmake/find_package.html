@@ -1,0 +1,631 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.26.2 by Michael Rose
+  Copyright 2013-2024 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en-US" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>find_package 사용하기 - SleepyBart Hislog</title>
+<meta name="description" content="다른 패키지를 쉽게 사용할 수 있다">
+
+
+  <meta name="author" content="SleepyBart">
+  
+  <meta property="article:author" content="SleepyBart">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="SleepyBart Hislog">
+<meta property="og:title" content="find_package 사용하기">
+<meta property="og:url" content="http://localhost:4000/sw/cmake/find_package">
+
+
+  <meta property="og:description" content="다른 패키지를 쉽게 사용할 수 있다">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="1900-01-01T00:01:44+08:27">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/sw/cmake/find_package">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="SleepyBart Hislog Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<link rel="icon" type="image/png" href="/assets/logo/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg" />
+<link rel="shortcut icon" href="/assets/logo/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/apple-touch-icon.png" />
+<link rel="manifest" href="/assets/logo/site.webmanifest" />
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          SleepyBart Hislog
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/about"
+                
+                
+              >About</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      <nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle menu</label>
+  <ul class="nav__items">
+    
+      
+      
+        <li>
+          
+            <span class="nav__sub-title">Software</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/sw/cpp">C++</a></li>
+            
+              <li><a href="/sw/csharp">C#</a></li>
+            
+              <li><a href="/sw/python">Python</a></li>
+            
+              <li><a href="/sw/fp">Functional Programming</a></li>
+            
+              <li><a href="/sw/database">Database</a></li>
+            
+              <li><a href="/sw/cmake">CMake</a></li>
+            
+              <li><a href="/sw/docker">docker</a></li>
+            
+              <li><a href="/sw/ai">AI</a></li>
+            
+              <li><a href="/sw/tensorflow">Tensorflow</a></li>
+            
+              <li><a href="/sw/linux">Linux</a></li>
+            
+              <li><a href="/sw/windows">Windows</a></li>
+            
+              <li><a href="/sw/arch">Design / Architecture</a></li>
+            
+              <li><a href="/sw/testing">Testing</a></li>
+            
+              <li><a href="/sw">일반</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Books</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/book/it">IT</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <a href="/me"><span class="nav__sub-title">Me</span></a>
+          
+
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">References</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/reference/it">IT</a></li>
+            
+              <li><a href="/reference/gundam">건담</a></li>
+            
+          </ul>
+          
+        </li>
+      
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="find_package 사용하기">
+    <meta itemprop="description" content="다른 패키지를 쉽게 사용할 수 있다">
+    <meta itemprop="datePublished" content="1900-01-01T00:01:44+08:27">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="http://localhost:4000/sw/cmake/find_package" itemprop="url">find_package 사용하기
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#배경">배경</a><ul><li><a href="#문제1-패키지-검색-경로-문제">문제1. 패키지 검색 경로 문제</a></li><li><a href="#문제2-config-mode">문제2 CONFIG mode</a></li><li><a href="#문제2-module-mode">문제2 MODULE mode</a></li></ul></li><li><a href="#비교">비교</a></li><li><a href="#refenreces">Refenreces</a></li></ul>
+            </nav>
+          </aside>
+        
+        <blockquote>
+  <p>CMake의 모든 것을 파악하고 쓰는 글이 아니다.
+단편적인 정보들을 나열 할 수 있지만, 우선 당장의 닥친 문제들과 해결 방법들을 적어본다.</p>
+</blockquote>
+
+<p>CMake를 사용하여 빌드 시스템을 구축 중이다. Open Source를 포함한 다수의 모듈들을  사용하는데 이들의 종속성을 쉽게 관리하는 방법들이 제공된다.</p>
+
+<h2 id="배경">배경</h2>
+<p>CMake로 빌드되어 제공되는 패키지 중에는 이를 사용하는 다른 빌드에서 쉽게 사용할 수 있도록 해당 패키지의 빌드 설정, 타겟, 헤더 경로 등의 정보를 제공한다. 이는 주로 패키지 하위의 <code class="language-plaintext highlighter-rouge">cmake</code> 디렉토리에 존재한다.</p>
+
+<p>이를 <code class="language-plaintext highlighter-rouge">find_package()</code>를 통해서 해당 패키지의 정보를 읽어 사용할 수 있는데, 몇가지 문제를 겪었다.</p>
+
+<h3 id="문제1-패키지-검색-경로-문제">문제1. 패키지 검색 경로 문제</h3>
+<p>이렇게 하면 쉽게 찾아질 줄 알았다.</p>
+<div class="language-cmake highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">find_package</span><span class="p">(</span>Protobuf REQUIRED<span class="p">)</span>
+</code></pre></div></div>
+<p>결과는</p>
+<div class="language-cmake highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">message</span><span class="p">(</span><span class="s2">"protoc:        "</span> PROTOC_COMMAND<span class="p">)</span>
+<span class="nb">message</span><span class="p">(</span><span class="s2">"include dir:   "</span> Protobuf_INCLUDE_DIR<span class="p">)</span>
+<span class="nb">message</span><span class="p">(</span><span class="s2">"libraries dir: "</span> Protobuf_LIBRARIES<span class="p">)</span>
+</code></pre></div></div>
+<p>찾고자 하는 패키지가 시스템 라이브러리 경로에 존재 하지 않는다면 검색될 수 있도록 검색 경로에 추가해 주어야 한다.
+<code class="language-plaintext highlighter-rouge">CMAKE_PREFIX_PATH</code></p>
+<div class="language-cmake highlighter-rouge"><div class="highlight"><pre class="highlight"><code>li
+<span class="nb">set</span><span class="p">(</span>CMAKE<span class="p">)</span>
+</code></pre></div></div>
+
+<p>CMAKE_PRE</p>
+<h3 id="문제2-config-mode">문제2 CONFIG mode</h3>
+<h3 id="문제2-module-mode">문제2 MODULE mode</h3>
+
+<h2 id="비교">비교</h2>
+<p>내가 사용하려는 패키지가 소스와 함께 제공되고 CMake로 빌드가 가능한 경우는 <code class="language-plaintext highlighter-rouge">add_subdirectory()</code>를 통해 빌드에 포함하고 의존성을 기술하여 사용할 수 있다.</p>
+
+<p><code class="language-plaintext highlighter-rouge">find_package()</code>와 다른점은 사용하고자 하는 패키지를 이미 빌드되어 있는 상태에서 사용하느냐, 빌드도 포함하여 수행하느냐의 차이가 있다.</p>
+
+<h2 id="refenreces">Refenreces</h2>
+<ul>
+  <li><a href="https://cmake.org/cmake/help/latest/guide/using-dependencies/index.html">CMake Using Dependencies Guid</a></li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#cmake" class="page__taxonomy-item p-category" rel="tag">cmake</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="1900-01-01T00:01:44+08:27">January 1, 1900</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  <h4 class="page__share-title">Share on</h4>
+
+  <a href="https://twitter.com/intent/tweet?text=find_package+%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0%20http%3A%2F%2Flocalhost%3A4000%2Fsw%2Fcmake%2Ffind_package" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fsw%2Fcmake%2Ffind_package" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/sw/cmake/find_package" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/sw/cpp/rvalue_lvalue_func_overload" class="pagination--pager" title="객체가 rvalue인 경우와 lvalue인 경우 다른 함수로 overload 하기">Previous</a>
+    
+    
+      <a href="/sw/database/mongo_features_to_know" class="pagination--pager" title="알아볼 MongoDB 기능들">Next</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    
+<div class="page__related">
+  
+  <h2 class="page__related-title">You may also enjoy</h2>
+  <div class="grid__wrapper">
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/sw/database/nosql" rel="permalink">NoSQL
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">적절한 database 고르기
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/book/me/weight" rel="permalink">Weight
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">???
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/sw/tensorflow/broadcasting" rel="permalink">broadcasting rule
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">broadcasting
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/sw/ai/softmax" rel="permalink">Softmax Function
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">softmax
+</p>
+  </article>
+</div>
+
+    
+  </div>
+</div>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+          <li><a href="https://github.com/bartkim" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<!--
+<div class="page__footer-copyright">&copy; 2025 <a href="http://localhost:4000">SleepyBart Hislog</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+-->
+<div class="page__footer-copyright">&copy; 2025 <a href="http://localhost:4000">SleepyBart</a>.</div>
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

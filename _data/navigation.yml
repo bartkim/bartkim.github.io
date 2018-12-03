@@ -1,0 +1,48 @@
+# main links
+main:
+  - title: "About"
+    url: /about
+
+categories:
+  - title: Software
+    children:
+    - title: C++
+      url: /sw/cpp
+    - title: C#
+      url: /sw/csharp
+    - title: Python
+      url: /sw/python
+    - title: Functional Programming
+      url: /sw/fp
+    - title: Database
+      url: /sw/database
+    - title: CMake
+      url: /sw/cmake
+    - title: docker
+      url: /sw/docker
+    - title: AI
+      url: /sw/ai
+    - title: Tensorflow
+      url: /sw/tensorflow
+    - title: Linux
+      url: /sw/linux
+    - title: Windows
+      url: /sw/windows
+    - title: Design / Architecture
+      url: /sw/arch
+    - title: Testing
+      url: /sw/testing
+    - title: 일반
+      url: /sw
+  - title: Books
+    children:
+    - title: IT
+      url: /book/it
+  - title: Me
+    url: /me
+  - title: References
+    children:
+    - title: IT
+      url: /reference/it
+    - title: 건담
+      url: /reference/gundam

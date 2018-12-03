@@ -1,0 +1,631 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.26.2 by Michael Rose
+  Copyright 2013-2024 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en-US" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Python Study - SleepyBart Hislog</title>
+<meta name="description" content="나는 동적 타입 언어가 힘들다">
+
+
+  <meta name="author" content="SleepyBart">
+  
+  <meta property="article:author" content="SleepyBart">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="SleepyBart Hislog">
+<meta property="og:title" content="Python Study">
+<meta property="og:url" content="http://localhost:4000/sw/python/study">
+
+
+  <meta property="og:description" content="나는 동적 타입 언어가 힘들다">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2019-01-19T00:00:00+09:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/sw/python/study">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="SleepyBart Hislog Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<link rel="icon" type="image/png" href="/assets/logo/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg" />
+<link rel="shortcut icon" href="/assets/logo/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/apple-touch-icon.png" />
+<link rel="manifest" href="/assets/logo/site.webmanifest" />
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          SleepyBart Hislog
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/about"
+                
+                
+              >About</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      <nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle menu</label>
+  <ul class="nav__items">
+    
+      
+      
+        <li>
+          
+            <span class="nav__sub-title">Software</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/sw/cpp">C++</a></li>
+            
+              <li><a href="/sw/csharp">C#</a></li>
+            
+              <li><a href="/sw/python">Python</a></li>
+            
+              <li><a href="/sw/fp">Functional Programming</a></li>
+            
+              <li><a href="/sw/database">Database</a></li>
+            
+              <li><a href="/sw/cmake">CMake</a></li>
+            
+              <li><a href="/sw/docker">docker</a></li>
+            
+              <li><a href="/sw/ai">AI</a></li>
+            
+              <li><a href="/sw/tensorflow">Tensorflow</a></li>
+            
+              <li><a href="/sw/linux">Linux</a></li>
+            
+              <li><a href="/sw/windows">Windows</a></li>
+            
+              <li><a href="/sw/arch">Design / Architecture</a></li>
+            
+              <li><a href="/sw/testing">Testing</a></li>
+            
+              <li><a href="/sw">일반</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Books</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/book/it">IT</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <a href="/me"><span class="nav__sub-title">Me</span></a>
+          
+
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">References</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/reference/it">IT</a></li>
+            
+              <li><a href="/reference/gundam">건담</a></li>
+            
+          </ul>
+          
+        </li>
+      
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Python Study">
+    <meta itemprop="description" content="나는 동적 타입 언어가 힘들다">
+    <meta itemprop="datePublished" content="2019-01-19T00:00:00+09:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="http://localhost:4000/sw/python/study" itemprop="url">Python Study
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#functions">functions</a></li><li><a href="#삼항-연산">삼항 연산</a></li><li><a href="#list-comprehension">List Comprehension</a></li><li><a href="#slice">slice</a></li></ul>
+            </nav>
+          </aside>
+        
+        <p>나는 동적 타입 언어가 힘들다.</p>
+
+<h2 id="functions">functions</h2>
+<ul>
+  <li>input()</li>
+  <li>join()</li>
+  <li>len()</li>
+  <li>int()</li>
+  <li>map()</li>
+</ul>
+
+<h2 id="삼항-연산">삼항 연산</h2>
+<p>영어 어순을 쓰는 사람에게는 readability가 높은 것 같지만, 한국어 어순에는 어색하다.</p>
+
+<p>Python에서 삼항 연산</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="k">if</span> <span class="n">test</span> <span class="k">else</span> <span class="n">b</span>
+</code></pre></div></div>
+
+<p>C에서 삼항 연산</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">test</span> <span class="o">?</span> <span class="n">a</span> <span class="o">:</span> <span class="n">b</span>
+</code></pre></div></div>
+
+<h2 id="list-comprehension">List Comprehension</h2>
+<p>만약 [ 1, 2, ,3, 4 ] 중에서 짝수인 2와 4에만 3을 곱하여 담고 싶다면 다음과 같이 리스트 내포 안에 “if 조건문”을 사용할 수도 있다.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span> <span class="p">]</span>
+<span class="n">result</span> <span class="o">=</span> <span class="p">[</span> <span class="n">num</span> <span class="o">*</span> <span class="mi">3</span> <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">a</span> <span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">]</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[6, 12]
+</code></pre></div></div>
+
+<p>리스트 내포의 일반적인 문법은 다음과 같다. “if 조건문” 부분은 앞의 예제에서 볼 수 있듯이 생략할 수 있다.</p>
+
+<p>[표현식 for 항목 in 반복가능객체 if 조건문]</p>
+
+<h2 id="slice">slice</h2>
+
+<p>reverse</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">reversed</span> <span class="o">=</span> <span class="n">items</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</code></pre></div></div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#python" class="page__taxonomy-item p-category" rel="tag">python</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2019-01-19T00:00:00+09:00">January 19, 2019</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  <h4 class="page__share-title">Share on</h4>
+
+  <a href="https://twitter.com/intent/tweet?text=Python+Study%20http%3A%2F%2Flocalhost%3A4000%2Fsw%2Fpython%2Fstudy" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fsw%2Fpython%2Fstudy" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/sw/python/study" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/sw/windows/startmenu" class="pagination--pager" title="Windows 시작메뉴에 프로그램 등록하기">Previous</a>
+    
+    
+      <a href="/sw/ai/softmax" class="pagination--pager" title="Softmax Function">Next</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    
+<div class="page__related">
+  
+  <h2 class="page__related-title">You may also enjoy</h2>
+  <div class="grid__wrapper">
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/sw/database/nosql" rel="permalink">NoSQL
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">적절한 database 고르기
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/book/me/weight" rel="permalink">Weight
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">???
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/sw/tensorflow/broadcasting" rel="permalink">broadcasting rule
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">broadcasting
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/sw/ai/softmax" rel="permalink">Softmax Function
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">softmax
+</p>
+  </article>
+</div>
+
+    
+  </div>
+</div>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+          <li><a href="https://github.com/bartkim" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<!--
+<div class="page__footer-copyright">&copy; 2025 <a href="http://localhost:4000">SleepyBart Hislog</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+-->
+<div class="page__footer-copyright">&copy; 2025 <a href="http://localhost:4000">SleepyBart</a>.</div>
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

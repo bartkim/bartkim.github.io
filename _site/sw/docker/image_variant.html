@@ -1,0 +1,665 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.26.2 by Michael Rose
+  Copyright 2013-2024 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en-US" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Image Variants - SleepyBart Hislog</title>
+<meta name="description" content="alpline? slim?">
+
+
+  <meta name="author" content="SleepyBart">
+  
+  <meta property="article:author" content="SleepyBart">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="SleepyBart Hislog">
+<meta property="og:title" content="Image Variants">
+<meta property="og:url" content="http://localhost:4000/sw/docker/image_variant">
+
+
+  <meta property="og:description" content="alpline? slim?">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="1900-01-01T00:01:44+08:27">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/sw/docker/image_variant">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="SleepyBart Hislog Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<link rel="icon" type="image/png" href="/assets/logo/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg" />
+<link rel="shortcut icon" href="/assets/logo/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/apple-touch-icon.png" />
+<link rel="manifest" href="/assets/logo/site.webmanifest" />
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          SleepyBart Hislog
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/about"
+                
+                
+              >About</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      <nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle menu</label>
+  <ul class="nav__items">
+    
+      
+      
+        <li>
+          
+            <span class="nav__sub-title">Software</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/sw/cpp">C++</a></li>
+            
+              <li><a href="/sw/csharp">C#</a></li>
+            
+              <li><a href="/sw/python">Python</a></li>
+            
+              <li><a href="/sw/fp">Functional Programming</a></li>
+            
+              <li><a href="/sw/database">Database</a></li>
+            
+              <li><a href="/sw/cmake">CMake</a></li>
+            
+              <li><a href="/sw/docker">docker</a></li>
+            
+              <li><a href="/sw/ai">AI</a></li>
+            
+              <li><a href="/sw/tensorflow">Tensorflow</a></li>
+            
+              <li><a href="/sw/linux">Linux</a></li>
+            
+              <li><a href="/sw/windows">Windows</a></li>
+            
+              <li><a href="/sw/arch">Design / Architecture</a></li>
+            
+              <li><a href="/sw/testing">Testing</a></li>
+            
+              <li><a href="/sw">일반</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Books</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/book/it">IT</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <a href="/me"><span class="nav__sub-title">Me</span></a>
+          
+
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">References</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/reference/it">IT</a></li>
+            
+              <li><a href="/reference/gundam">건담</a></li>
+            
+          </ul>
+          
+        </li>
+      
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Image Variants">
+    <meta itemprop="description" content="alpline? slim?">
+    <meta itemprop="datePublished" content="1900-01-01T00:01:44+08:27">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="http://localhost:4000/sw/docker/image_variant" itemprop="url">Image Variants
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#imageversion">image:&lt;version&gt;</a></li><li><a href="#imageversion-bullseye--stretch--buster--jessie">image:&lt;version&gt;-bullseye, -stretch, -buster, -jessie</a><ul><li><a href="#-alpine">-alpine</a></li><li><a href="#-slim">-slim</a></li><li><a href="#-windowsservercore">-windowsservercore</a></li></ul></li><li><a href="#용량-비교">용량 비교</a></li><li><a href="#선택-가이드-라인">선택 가이드 라인</a></li><li><a href="#references">References</a></li></ul>
+            </nav>
+          </aside>
+        
+        <p>나는 아주 가끔 docker를 사용한다.
+그런데 모처럼 이미지를 하나 받으러 hub.docker.com 에 갔다가 도대체 어떤 것을 받아야 할지 혼란스러움을 느꼈다.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>image:&lt;version&gt;
+</code></pre></div></div>
+
+<p>여기까지는 알겠다. 특정 버전을 다운받고 싶으면 버전을 명시하라는 말이라는 것을.
+그런데…</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>image:&lt;version&gt;-alpine
+image:&lt;version&gt;-slim
+image:&lt;version&gt;-windowsservercore
+</code></pre></div></div>
+
+<p>이렇게 뒤에 더 붙은 -apline, -slim, -windowsservercore 는 무엇이란 말인가.
+우선 이런 것들은 tag라고 하며 이들이 무엇을 뜻하는지 찾아봤다.</p>
+
+<h2 id="imageversion">image:&lt;version&gt;</h2>
+<p>Full Official Image이며, Debian 배포판 중 가장 최신 안정버전을 기반으로 만들어진 이미지이다. 어떤 것을 써야할 지 모르겠다면, 이것을 선택하면 된다.</p>
+
+<p>주로 많이 사용하는 Ubuntu 배포판은 Debian 배포판을 기반으로 하므로 이를 사용하면 된다.</p>
+
+<h2 id="imageversion-bullseye--stretch--buster--jessie">image:&lt;version&gt;-bullseye, -stretch, -buster, -jessie</h2>
+<p>bullseye, stretch, buster, jessie는 Debian 배포판의 코드 네임이며 원하는 버전이 있다면 이를 선택하면 된다.</p>
+
+<blockquote>
+  <p>모르는 이름이 tag에 붙었다고 하면 Debian 배포판 릴리즈 코드 네임을 살펴보자.</p>
+</blockquote>
+
+<h3 id="-alpine">-alpine</h3>
+<p><a href="https://alpinelinux.org/">alpine</a>은 linux 배포판 중 하나로 작고 간단한 것을 특징으로 하며, 특히 container 환경을 염두에 두고 만들어진 배포판이다.
+다른 배포판에 비해 많은 것들이 생략되어 있으므로, linux 배포판의 특정 모듈에 의존성이 있는 경우 호환성이 문제가 되기도 한다. 예를들면 alpine에는 glibc 라이브러리 대신 musl libc가 포함되어 있다.</p>
+
+<p>image의 용량이 작은 대신 호환성에 문제가 있을 수 있으므로 주의가 필요하다.</p>
+
+<h3 id="-slim">-slim</h3>
+<p>최소 패키지를 설치한 image이다. 당연히 full version에 비해 용량이 작다는 장점이 있지만, 막상 필요한 부분이 설치에서 제외되어 있을 가능성이 있으므로 주의가 필요하다.</p>
+
+<h3 id="-windowsservercore">-windowsservercore</h3>
+<p>Windows Server를 위한 image이다.</p>
+
+<h2 id="용량-비교">용량 비교</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td>python</td>
+      <td>3.8.3</td>
+      <td>934MB</td>
+    </tr>
+    <tr>
+      <td>python</td>
+      <td>3.8.3-slim</td>
+      <td>165MB</td>
+    </tr>
+    <tr>
+      <td>python</td>
+      <td>3.8.3-aline</td>
+      <td>78.9MB</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="선택-가이드-라인">선택 가이드 라인</h2>
+<ul>
+  <li>뭐가 뭔지 모르겠다면, 우선 official full image를 사용한다.</li>
+  <li>설치 용량을 고민해야 하고, 최소 패키지로 동작이 가능하다는 것을 알면 -slim 버전을 이용한다.</li>
+  <li>설치 용량이 크게 고려되어야 한다면, -alpine 버전을 이용한다. 단, 테스트를 많이 해봐야 한다.</li>
+</ul>
+
+<h2 id="references">References</h2>
+<ul>
+  <li>https://medium.com/swlh/alpine-slim-stretch-buster-jessie-bullseye-bookworm-what-are-the-differences-in-docker-62171ed4531d</li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#docker" class="page__taxonomy-item p-category" rel="tag">docker</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="1900-01-01T00:01:44+08:27">January 1, 1900</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  <h4 class="page__share-title">Share on</h4>
+
+  <a href="https://twitter.com/intent/tweet?text=Image+Variants%20http%3A%2F%2Flocalhost%3A4000%2Fsw%2Fdocker%2Fimage_variant" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fsw%2Fdocker%2Fimage_variant" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/sw/docker/image_variant" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/sw/docker/command" class="pagination--pager" title="Docker Command">Previous</a>
+    
+    
+      <a href="/sw/docker/without_sudo" class="pagination--pager" title="sudo 없이 docker 명령 실행하기">Next</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    
+<div class="page__related">
+  
+  <h2 class="page__related-title">You may also enjoy</h2>
+  <div class="grid__wrapper">
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/sw/database/nosql" rel="permalink">NoSQL
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">적절한 database 고르기
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/book/me/weight" rel="permalink">Weight
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">???
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/sw/tensorflow/broadcasting" rel="permalink">broadcasting rule
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">broadcasting
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/sw/ai/softmax" rel="permalink">Softmax Function
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">softmax
+</p>
+  </article>
+</div>
+
+    
+  </div>
+</div>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+          <li><a href="https://github.com/bartkim" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<!--
+<div class="page__footer-copyright">&copy; 2025 <a href="http://localhost:4000">SleepyBart Hislog</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+-->
+<div class="page__footer-copyright">&copy; 2025 <a href="http://localhost:4000">SleepyBart</a>.</div>
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

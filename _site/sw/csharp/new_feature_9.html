@@ -1,0 +1,642 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.26.2 by Michael Rose
+  Copyright 2013-2024 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en-US" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>New Features of C# 9 - SleepyBart Hislog</title>
+<meta name="description" content="C# 9 새로운 기능">
+
+
+  <meta name="author" content="SleepyBart">
+  
+  <meta property="article:author" content="SleepyBart">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="SleepyBart Hislog">
+<meta property="og:title" content="New Features of C# 9">
+<meta property="og:url" content="http://localhost:4000/sw/csharp/new_feature_9">
+
+
+  <meta property="og:description" content="C# 9 새로운 기능">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="1900-01-01T00:01:44+08:27">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/sw/csharp/new_feature_9">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="SleepyBart Hislog Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<link rel="icon" type="image/png" href="/assets/logo/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg" />
+<link rel="shortcut icon" href="/assets/logo/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/apple-touch-icon.png" />
+<link rel="manifest" href="/assets/logo/site.webmanifest" />
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          SleepyBart Hislog
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/about"
+                
+                
+              >About</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      <nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle menu</label>
+  <ul class="nav__items">
+    
+      
+      
+        <li>
+          
+            <span class="nav__sub-title">Software</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/sw/cpp">C++</a></li>
+            
+              <li><a href="/sw/csharp">C#</a></li>
+            
+              <li><a href="/sw/python">Python</a></li>
+            
+              <li><a href="/sw/fp">Functional Programming</a></li>
+            
+              <li><a href="/sw/database">Database</a></li>
+            
+              <li><a href="/sw/cmake">CMake</a></li>
+            
+              <li><a href="/sw/docker">docker</a></li>
+            
+              <li><a href="/sw/ai">AI</a></li>
+            
+              <li><a href="/sw/tensorflow">Tensorflow</a></li>
+            
+              <li><a href="/sw/linux">Linux</a></li>
+            
+              <li><a href="/sw/windows">Windows</a></li>
+            
+              <li><a href="/sw/arch">Design / Architecture</a></li>
+            
+              <li><a href="/sw/testing">Testing</a></li>
+            
+              <li><a href="/sw">일반</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Books</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/book/it">IT</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <a href="/me"><span class="nav__sub-title">Me</span></a>
+          
+
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">References</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/reference/it">IT</a></li>
+            
+              <li><a href="/reference/gundam">건담</a></li>
+            
+          </ul>
+          
+        </li>
+      
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="New Features of C# 9">
+    <meta itemprop="description" content="C# 9 새로운 기능">
+    <meta itemprop="datePublished" content="1900-01-01T00:01:44+08:27">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="http://localhost:4000/sw/csharp/new_feature_9" itemprop="url">New Features of C# 9
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#record-type">Record Type</a><ul><li><a href="#references">References</a></li></ul></li><li><a href="#static-anonymous-function">Static Anonymous Function</a><ul><li><a href="#example">Example</a></li><li><a href="#references-1">References</a></li></ul></li></ul>
+            </nav>
+          </aside>
+        
+        <p><a href="https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9">https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9</a></p>
+
+<h2 id="record-type">Record Type</h2>
+<p>Immutable 데이터를 언어차원에서 쉽고 편하게 정의 및 사용할 수 있도록 제공하기 위해 추가 되었다.</p>
+
+<p>물론 기존의 class와 struct를 사용하여 목적을 달성할 수 있는데 굳이 언어차원에서 추가할 필요가 있었을까?
+record가 없었을 때 이를 구현하기 위한 방법으로는</p>
+<ol>
+  <li>일반 class로 구현한 후 불변성(Immutable)을 암묵적인 약속을 기반으로 사용한다. 즉, 변경할 수 있지만 그냥 안하기로 한다.</li>
+</ol>
+
+<p>C#에서도 함수형 프로그래밍 개념 적용을 확대해 나가기 위함으로 보인다.</p>
+
+<h3 id="references">References</h3>
+<ul>
+  <li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9#record-types">https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9#record-types</a></li>
+  <li><a href="https://www.daveabrock.com/2020/07/06/c-sharp-9-deep-dive-records/">https://www.daveabrock.com/2020/07/06/c-sharp-9-deep-dive-records/</a></li>
+</ul>
+
+<h2 id="static-anonymous-function">Static Anonymous Function</h2>
+<p>람다(lambda)식과 같은 익명 함수(anonymos function)에서 불필요한 주변 컨텍스트 캡쳐를 방지하기 위해 함수 앞에 <em>static</em> 을 붙일 수 있다.
+이 경우 익명 함수 내에서 인스턴스 멤버에 대한 접근은 차단되나, static 멤버와 const 정의값은 접근 가능하다.</p>
+
+<p>static을 붙이지 않아도 프로그램의 의미가 달라지지 않으므로 해당 함수의 참조 범위를 쉽게 파악할 수 있는 목적으로 사용할 수 있겠다.</p>
+
+<h3 id="example">Example</h3>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="k">class</span> <span class="nc">ClassA</span>
+    <span class="p">{</span>
+        <span class="kt">int</span> <span class="n">mInstanceVariable</span><span class="p">;</span>
+        <span class="k">static</span> <span class="kt">int</span> <span class="n">sStaticVariable</span><span class="p">;</span>
+        <span class="k">const</span> <span class="kt">int</span> <span class="n">CONSTANT_VALUE</span> <span class="p">=</span> <span class="m">1</span><span class="p">;</span>
+
+        <span class="k">void</span> <span class="nf">DoSomething</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="k">const</span> <span class="kt">int</span> <span class="n">s</span> <span class="p">=</span> <span class="m">100</span><span class="p">;</span>
+
+            <span class="kt">var</span> <span class="n">fooFunc</span> <span class="p">=</span> <span class="k">static</span> <span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">)</span> <span class="p">=&gt;</span>
+            <span class="p">{</span>
+                <span class="kt">var</span> <span class="n">v1</span> <span class="p">=</span> <span class="n">mInstanceVariable</span><span class="p">;</span>   <span class="c1">// 컴파일 에러</span>
+                <span class="kt">var</span> <span class="n">v2</span> <span class="p">=</span> <span class="n">sStaticVariable</span><span class="p">;</span>     <span class="c1">// 참조 가능</span>
+                <span class="kt">var</span> <span class="n">v3</span> <span class="p">=</span> <span class="n">CONSTANT_VALUE</span><span class="p">;</span>      <span class="c1">// 참조 가능</span>
+                <span class="kt">var</span> <span class="n">v4</span> <span class="p">=</span> <span class="n">s</span><span class="p">;</span>                   <span class="c1">// 참조 가능</span>
+            <span class="p">};</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="references-1">References</h3>
+
+<p><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-9.0/static-anonymous-functions">https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-9.0/static-anonymous-functions</a></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#c" class="page__taxonomy-item p-category" rel="tag">c#</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="1900-01-01T00:01:44+08:27">January 1, 1900</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  <h4 class="page__share-title">Share on</h4>
+
+  <a href="https://twitter.com/intent/tweet?text=New+Features+of+C%23+9%20http%3A%2F%2Flocalhost%3A4000%2Fsw%2Fcsharp%2Fnew_feature_9" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fsw%2Fcsharp%2Fnew_feature_9" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/sw/csharp/new_feature_9" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/sw/csharp/new_feature_10" class="pagination--pager" title="New Features of C# 10">Previous</a>
+    
+    
+      <a href="/sw/cpp/rvalue_lvalue_func_overload" class="pagination--pager" title="객체가 rvalue인 경우와 lvalue인 경우 다른 함수로 overload 하기">Next</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    
+<div class="page__related">
+  
+  <h2 class="page__related-title">You may also enjoy</h2>
+  <div class="grid__wrapper">
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/sw/database/nosql" rel="permalink">NoSQL
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">적절한 database 고르기
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/book/me/weight" rel="permalink">Weight
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">???
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/sw/tensorflow/broadcasting" rel="permalink">broadcasting rule
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">broadcasting
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/sw/ai/softmax" rel="permalink">Softmax Function
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">softmax
+</p>
+  </article>
+</div>
+
+    
+  </div>
+</div>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+          <li><a href="https://github.com/bartkim" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<!--
+<div class="page__footer-copyright">&copy; 2025 <a href="http://localhost:4000">SleepyBart Hislog</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+-->
+<div class="page__footer-copyright">&copy; 2025 <a href="http://localhost:4000">SleepyBart</a>.</div>
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
