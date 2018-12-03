@@ -1,4 +1,4 @@
 theme: jekyll-theme-cayman
 
 
-include: _include/head.html
+include: - head.html
