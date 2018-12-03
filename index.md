@@ -1,8 +1,10 @@
 ## Welcome to GitHub Pages
 
+\[
 \begin{equation}
    E = mc^2
 \end{equation}
+\]
 
 You can use the [editor on GitHub](https://github.com/bartkim/bartkim.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
