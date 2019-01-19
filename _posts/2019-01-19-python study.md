@@ -1,3 +1,10 @@
+## functions
+* input()
+* join()
+* len()
+* int()
+* map()
+
 ## list comprehension
 ## slice
 
