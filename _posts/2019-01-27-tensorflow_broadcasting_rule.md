@@ -1,5 +1,7 @@
 {% include head.html %}
 
+# Tensorflow broadcasting rule
+
 ### Rule 1. 행렬과 스칼라의 덧셈은 각 성분에 대한 덧셈이다
 
 $$
