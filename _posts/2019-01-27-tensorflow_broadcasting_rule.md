@@ -4,7 +4,7 @@
 $$
 \begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{pmatrix} + (10) = \begin{pmatrix} 11 & 12 & 13 \\ 14 & 15 & 16 \\ 17 & 18 & 19 \end{pmatrix}
 $$
-{: .text-center }
+{: .text-center }ㅁㅁㅁ
 
 ### Rule 2. 크기가 같은 행렬의 '*' 연산은 성분별 곱셈이다
 $$
