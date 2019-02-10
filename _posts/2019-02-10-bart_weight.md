@@ -1,3 +1,3 @@
-{% include bart_weight.html %}
+{% include weight_head.html %}
 
 <div id="weight_bart"></div>
