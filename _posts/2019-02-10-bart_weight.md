@@ -1,8 +1,5 @@
 {% include weight_head.html %}
 
-
-<a>
+<body>
 <div id="weight_bart"></div>
-</a>
-
-h1. aabbccdd
+</body>
