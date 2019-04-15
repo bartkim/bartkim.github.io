@@ -7,5 +7,6 @@
 
 
 Favorits
-[YOLO](https://curt-park.github.io/2017-03-26/yolo/)
-[Tensorflow Dataset](https://cyc1am3n.github.io/2018/09/13/how-to-use-dataset-in-tensorflow.html)
+
+* [YOLO](https://curt-park.github.io/2017-03-26/yolo/)
+* [Tensorflow Dataset](https://cyc1am3n.github.io/2018/09/13/how-to-use-dataset-in-tensorflow.html)
