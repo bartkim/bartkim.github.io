@@ -15,6 +15,6 @@ Favorits
 
 Books
 * Software Systems Architecture Working with Stakeholders Using Viewpoints and Perspectives 0002/E |
-Rozanski, Nick , Woods, Eoin 지음 | Addison-Wesley Professional | 2011년 11월 04일
+Rozanski, Nick , Woods, Eoin 지음 | Addison-Wesley Professional | 2011년 11월 04일 | ISBN 9780321718334(032171833X)
 * Documenting Software Architectures Views and Beyond 0002/E |
-Clements, Paul , Bachmann, Felix , Bass, Len 지음 | Addison-Wesley Professional | 2010년 10월 08일
+Clements, Paul , Bachmann, Felix , Bass, Len 지음 | Addison-Wesley Professional | 2010년 10월 08일 | ISBN 9780321552686(0321552687)
