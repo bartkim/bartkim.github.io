@@ -14,5 +14,5 @@ Favorits
 
 
 Books
-* Software Systems Architecture Working with Stakeholders Using Viewpoints and Perspectives 0002/E 2 | 2
+* Software Systems Architecture Working with Stakeholders Using Viewpoints and Perspectives 0002/E |
 Rozanski, Nick , Woods, Eoin 지음 | Addison-Wesley Professional | 2011년 11월 04일
