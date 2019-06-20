@@ -4,7 +4,7 @@
 * [softmax](https://bartkim.github.io/2019/01/27/softmax)
 
 * [UNICODE encoding](https://bartkim.github.io/2019/03/10/UNICODE_encoding)
-
+* [NoSQL](https://bartkim.github.io/2019/06/20/NoSQL)
 
 Favorits
 
