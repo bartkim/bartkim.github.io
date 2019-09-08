@@ -1,4 +1,4 @@
-# CMake eclipse project file 생성하기
+# CMake Generator - eclipse project file 생성하기
 
 여러가지 builder로 생성가능하다.
 * Eclipse CDT4 - MinGW Makefiles
