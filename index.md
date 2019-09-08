@@ -6,6 +6,8 @@
 * [UNICODE encoding](https://bartkim.github.io/2019/03/10/UNICODE_encoding)
 * [NoSQL](https://bartkim.github.io/2019/06/20/NoSQL)
 
+* [CMake: Generator](_posts/cmake/generate.md)
+
 Favorits
 
 * [YOLO](https://curt-park.github.io/2017-03-26/yolo/)
