@@ -17,6 +17,17 @@
 ## Docker
 * [ARM Docker Containers on x86](https://www.stereolabs.com/docs/docker/building-arm-container-on-x86)
 
+## Deep Learning
+* [EfficientDet-2](https://jjeamin.github.io/paper/2019/11/23/EfficientDet2/)
+* [Anchor Boxes — The key to quality object detection](https://medium.com/@andersasac/anchor-boxes-the-key-to-quality-object-detection-ddf9d612d4f9)
+* [Anchors](https://medipixel.github.io/post/2019-06-14-anchor-target/)
+* [딥러닝을 활용한 객체 탐지 알고리즘 이해하기](https://blogs.sas.com/content/saskorea/2018/12/21/%EB%94%A5%EB%9F%AC%EB%8B%9D%EC%9D%84-%ED%99%9C%EC%9A%A9%ED%95%9C-%EA%B0%9D%EC%B2%B4-%ED%83%90%EC%A7%80-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/)
+* [전자통신동향분석](https://ettrends.etri.re.kr/ettrends/180/#section0)
+  * [모바일/임베디드 객체 및 장면 인식 기술동향](https://ettrends.etri.re.kr/ettrends/180/0905180012/)
+  * [심층강화학습 라이브러리 기술동향](https://ettrends.etri.re.kr/ettrends/180/0905180008/34-6_87-99.pdf)
+* [Deep Learning Object Detection 계보](https://blog.naver.com/phj8498/221772316253)
+
+
 # docker
 * [docker usage](post/docker_usage.md)
 
