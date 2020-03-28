@@ -19,6 +19,7 @@
 
 ## Deep Learning
 * [EfficientDet-2](https://jjeamin.github.io/paper/2019/11/23/EfficientDet2/)
+* [EfficeintDet 논문리뷰](https://hoya012.github.io/blog/EfficientDet-Review/)
 * [Anchor Boxes — The key to quality object detection](https://medium.com/@andersasac/anchor-boxes-the-key-to-quality-object-detection-ddf9d612d4f9)
 * [Anchors](https://medipixel.github.io/post/2019-06-14-anchor-target/)
 * [딥러닝을 활용한 객체 탐지 알고리즘 이해하기](https://blogs.sas.com/content/saskorea/2018/12/21/%EB%94%A5%EB%9F%AC%EB%8B%9D%EC%9D%84-%ED%99%9C%EC%9A%A9%ED%95%9C-%EA%B0%9D%EC%B2%B4-%ED%83%90%EC%A7%80-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/)
