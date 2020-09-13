@@ -16,7 +16,7 @@
 * [Tensorflow 2.0에서 달라지는 점](https://medium.com/@ljb7977/%ED%85%90%EC%84%9C%ED%94%8C%EB%A1%9C%EC%9A%B0-2-0%EC%97%90%EC%84%9C-%EB%8B%AC%EB%9D%BC%EC%A7%80%EB%8A%94-%EC%A0%90-6e233e0c7fbe)
 
 ## Programing Language
-* [Eager Execution](post/programming_language/eager_execution.md)
+* [Lazy Evaluation](post/programming_language/lazy_evaluation.md)
 
 ## Docker
 * [ARM Docker Containers on x86](https://www.stereolabs.com/docs/docker/building-arm-container-on-x86)
