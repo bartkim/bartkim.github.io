@@ -7,6 +7,7 @@
 * [NoSQL](https://bartkim.github.io/2019/06/20/NoSQL)
 
 * [CMake: Generator](_posts/cmake/generate.md)
+* [Build gflags in VS2019](post/build_gflags.md)
 
 # Favorits
 
@@ -20,6 +21,7 @@
 
 ## Docker
 * [ARM Docker Containers on x86](https://www.stereolabs.com/docs/docker/building-arm-container-on-x86)
+* [docker usage](post/docker_usage.md)
 
 ## Deep Learning
 * [EfficientDet-2](https://jjeamin.github.io/paper/2019/11/23/EfficientDet2/)
@@ -33,10 +35,8 @@
 * [Deep Learning Object Detection 계보](https://blog.naver.com/phj8498/221772316253)
 
 
-# docker
-* [docker usage](post/docker_usage.md)
 
-Books
+# Books
 * Software Architecture
   * Software Systems Architecture Working with Stakeholders Using Viewpoints and Perspectives 0002/E
     * Rozanski, Nick , Woods, Eoin 지음 | Addison-Wesley Professional | 2011년 11월 04일 | ISBN 9780321718334(032171833X)
