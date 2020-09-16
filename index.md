@@ -7,7 +7,7 @@
 * [NoSQL](https://bartkim.github.io/2019/06/20/NoSQL)
 
 * [CMake: Generator](_posts/cmake/generate.md)
-* [Build gflags in VS2019](post/build_gflags.md)
+* [BUILD gflags in VS2019](post/build_gflags.md)
 
 # Favorits
 
