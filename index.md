@@ -31,7 +31,7 @@ Windows 시작메뉴 등록
 ```
 for all users
 ```
-C:\ProgramData\Microsoft\Windows\Start Menu
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs
 ```
 
 
