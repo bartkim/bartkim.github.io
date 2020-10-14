@@ -23,6 +23,18 @@
 * [ARM Docker Containers on x86](https://www.stereolabs.com/docs/docker/building-arm-container-on-x86)
 * [docker usage](post/docker_usage.md)
 
+## Config
+Windows 시작메뉴 등록
+특정 사용자
+```
+%AppData%\Microsoft\Windows\Start Menu\Programs
+```
+for all users
+```
+C:\ProgramData\Microsoft\Windows\Start Menu
+```
+
+
 ## Deep Learning
 * [EfficientDet-2](https://jjeamin.github.io/paper/2019/11/23/EfficientDet2/)
 * [EfficeintDet 논문리뷰](https://hoya012.github.io/blog/EfficientDet-Review/)
