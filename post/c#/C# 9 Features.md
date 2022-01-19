@@ -2,7 +2,17 @@
 https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9
 
 
-### Record Types
+### Record Type
+Immutable 데이터를 언어차원에서 쉽고 편하게 정의 및 사용할 수 있도록 제공하기 위해 추가 되었다.
+
+물론 기존의 class와 struct를 사용하여 목적을 달성할 수 있는데 굳이 언어차원에서 추가할 필요가 있었을까?
+record가 없었을 때 이를 구현하기 위한 방법으로는
+1. 일반 class로 구현한 후 불변성(Immutable)을 암묵적인 약속을 기반으로 사용한다. 즉, 변경할 수 있지만 안한다.
+
+C#에서도 함수형 프로그래밍(Functional Programming) 개념 적용을 확대해 나가기 위함으로 보인다.
+
+
+
 #### References
 - https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9#record-types
 - https://www.daveabrock.com/2020/07/06/c-sharp-9-deep-dive-records/
