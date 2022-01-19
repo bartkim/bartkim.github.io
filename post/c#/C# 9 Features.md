@@ -1,4 +1,11 @@
+# New Features of C# 9
+https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9
 
+
+### Record Types
+#### References
+- https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9#record-types
+- https://www.daveabrock.com/2020/07/06/c-sharp-9-deep-dive-records/
 
 ### Static Anonymous Function
 https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-9.0/static-anonymous-functions
