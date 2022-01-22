@@ -9,8 +9,20 @@
 * [CMake: Generator](_posts/cmake/generate.md)
 * [BUILD gflags in VS2019](post/build_gflags.md)
 
-# Favorits
+# 즐겨찾기
+#### 개발도구 (CMake)
+* [An Introduction to Modern CMake](https://cliutils.gitlab.io/modern-cmake/)
+  * 적당한 howto 등의 내용과 함께 안티패턴 등도 소개됨
+* [CMake 기본패턴](https://www.tuwlab.com/27270)
+  * 오래된 내용이긴 하나 기본적인 내용을 얻을 수 있음
+#### 개발도구 (Visual Studio Code)
+* [Variables Reference](https://code.visualstudio.com/docs/editor/variables-reference)
+  * launch.json 및 tasks.json 파일에서 Task와 Debugging 위한 설정에 사용할 수 있는 사전 정의 변수들의 목록
+### OS Windows
+* [Windows Utility Download](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon)
+  * MS에서 제공하는 windows의 별의별 유틸리티들
 
+## 딥러닝
 * [YOLO](https://curt-park.github.io/2017-03-26/yolo/)
 * [Tensorflow Dataset](https://cyc1am3n.github.io/2018/09/13/how-to-use-dataset-in-tensorflow.html)
 * [Tensorflow blog](https://tensorflow.blog/2017/05/10/tf%EC%9D%98-%ED%85%90%EC%84%9C%EC%99%80-%EC%83%81%EC%88%98-%EB%B3%80%EC%88%98-%ED%94%8C%EB%A0%88%EC%9D%B4%EC%8A%A4%ED%99%80%EB%8D%94/)
