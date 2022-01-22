@@ -22,6 +22,11 @@
 * [Windows Utility Download](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon)
   * MS에서 제공하는 windows의 별의별 유틸리티들
 
+### 참고 사이트
+* [DaleSeo](https://www.daleseo.com/)
+  * 페이지 디자인이 무척 깔끔해서 내 블로그에 참고
+  * web front-end 관련된 내용도 참고할만 함. 특히 CSS
+
 ## 딥러닝
 * [YOLO](https://curt-park.github.io/2017-03-26/yolo/)
 * [Tensorflow Dataset](https://cyc1am3n.github.io/2018/09/13/how-to-use-dataset-in-tensorflow.html)
