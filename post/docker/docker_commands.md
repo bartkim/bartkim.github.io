@@ -8,7 +8,7 @@ docker의 image와 container의 관계는 program과 process의 관계와 유사
 docker hub -----> image -----> container
 ```
 
-이 개념을 가지고 명령을 이해하는 것이 도움이 된다.
+여기서는 image를 대상으로 하는 명령과 conainer를 대상으로 하는 명령으로 나누어 간단히 알아본다.
 
 ubuntu에서 docker 명령을 실행하기 위해서는 관리자 권한이 필요하다. 따라서 sudo를 항상 붙여서 표기하였다.
 
