@@ -86,6 +86,7 @@ $ sudo docker container ls -a
 ```bash
 $ sudo docker container exec    \
     {options}                   \
+    {container id or name}
     {command}
 ```
 option은 `-d`, `-i`, `-t`, `-e`, `-w` 등이 있다. run 명령의 옵션과 비슷하며 자세한 것은 [여기](https://docs.docker.com/engine/reference/commandline/exec/#options)를 참고하자.
