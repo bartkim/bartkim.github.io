@@ -37,6 +37,8 @@
     * PublishSingleFile : 릴리즈를 하나의 파일로 archive 하는 건가
     * System.Json : NewtonJson 은 안녕?, source generation
 
+### 기타
+* [HTTP 응답 상태 코드](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
 ### 참고 사이트
 * [DaleSeo](https://www.daleseo.com/)
   * 페이지 디자인이 무척 깔끔해서 내 블로그에 참고
