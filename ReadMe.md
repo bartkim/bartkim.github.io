@@ -36,6 +36,9 @@
     * System.Linq
     * PublishSingleFile : 릴리즈를 하나의 파일로 archive 하는 건가
     * System.Json : NewtonJson 은 안녕?, source generation
+  * WPF
+    * [PasswordBox data binding](http://blog.functionalfun.net/2008/06/wpf-passwordbox-and-data-binding.html)
+      * xaml에서 추가 기능을 제공하는 attribute를 넣는 방법을 알 수 있다.
 
 ### 기타
 * [HTTP 응답 상태 코드](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
