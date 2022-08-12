@@ -56,4 +56,4 @@ Method name is: tensorflow/serving/predict
 
 
 ## Reference
-[Saved Model|https://www.tensorflow.org/guide/saved_model?hl=ko]
+[Saved Model](https://www.tensorflow.org/guide/saved_model?hl=ko)
