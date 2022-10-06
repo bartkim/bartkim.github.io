@@ -37,9 +37,23 @@
     * System.Linq
     * PublishSingleFile : 릴리즈를 하나의 파일로 archive 하는 건가
     * System.Json : NewtonJson 은 안녕?, source generation
+  * [배포파일 한개로 만들기](https://blog.naver.com/vactorman/222606954186)
+  
 ### .NET WPF
   * [PasswordBox data binding](http://blog.functionalfun.net/2008/06/wpf-passwordbox-and-data-binding.html)
     * xaml에서 추가 기능을 제공하는 attribute를 넣는 방법을 알 수 있다.
+  * [Rotary Control](https://www.codeproject.com/Articles/4044072/A-WPF-Rotary-Control)
+    * 계기판 형태의 UI control 소스코드
+  * [DataGrid에서 행을 선택할 때 System.ArgumentException](https://docs.microsoft.com/ko-kr/troubleshoot/dotnet/framework/argumentexception-select-row-wpf-datagrid)
+    * .netframework의 문제
+    * ItemsSource에 바인딩 된 객체가 변경 가능한 속성을 사용하여 Object.GetHashCode() 값을 계산할 때의 문제
+  * [MVVM in Real-World Applications](https://firefinch.io/deep-dive-mvvm/)
+    * MVVM 적용시 ViewModel - Model간의 결합도를 낮추기 위한 구조 제안
+      * 문제: 특히 Model에서 변경사항을 따로 publish하지 않는 경우
+      * 방안: ViewModel - Model 사이에 command executor를 넣어라
+        * 결함도 낮춤
+        * command에 의한 undo/redo 패턴 적용 가능
+  * 하나의 
 
 ### 기타
 * [HTTP 응답 상태 코드](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
