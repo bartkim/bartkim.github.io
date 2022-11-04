@@ -57,6 +57,7 @@
 
 ### 기타
 * [HTTP 응답 상태 코드](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+* [머신러닝 시스템에서 설정 관리하기](https://rosinality.github.io/2021/05/%EB%A8%B8%EC%8B%A0-%EB%9F%AC%EB%8B%9D-%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%97%90%EC%84%9C-%EC%84%A4%EC%A0%95-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0/)
 ### 참고 사이트
 * [DaleSeo](https://www.daleseo.com/)
   * 페이지 디자인이 무척 깔끔해서 내 블로그에 참고
