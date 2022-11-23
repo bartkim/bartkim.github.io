@@ -53,7 +53,10 @@
       * 방안: ViewModel - Model 사이에 command executor를 넣어라
         * 결함도 낮춤
         * command에 의한 undo/redo 패턴 적용 가능
-  * 하나의 
+  * [MahApp hottest Q&A](https://stackoverflow.com/tags/mahapps.metro/hot?filter=all)
+    * MahApp 여러가지 문제와 해결방법들
+  * [다양한 템플릿 유형](https://chriskim10.tistory.com/4)
+    * 이 외에도 WPF 사례들을 볼만하다
 
 ### MongoDB
 * [알아보자](https://bartkim.github.io/post/mongodb/features)
