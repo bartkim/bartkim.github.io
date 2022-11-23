@@ -11,12 +11,15 @@
 * [BUILD gflags in VS2019](post/build_gflags.md)
 
 # 즐겨찾기
-#### 개발도구 (CMake)
+### C++
+* [const& , & and && specifiers for member functions in C++](https://stackoverflow.com/questions/28066777/const-and-specifiers-for-member-functions-in-c)
+ 
+### 개발도구 (CMake)
 * [An Introduction to Modern CMake](https://cliutils.gitlab.io/modern-cmake/)
   * 적당한 howto 등의 내용과 함께 안티패턴 등도 소개됨
 * [CMake 기본패턴](https://www.tuwlab.com/27270)
   * 오래된 내용이긴 하나 기본적인 내용을 얻을 수 있음
-#### 개발도구 (Visual Studio Code)
+### 개발도구 (Visual Studio Code)
 * [Variables Reference](https://code.visualstudio.com/docs/editor/variables-reference)
   * launch.json 및 tasks.json 파일에서 Task와 Debugging 위한 설정에 사용할 수 있는 사전 정의 변수들의 목록
 ### 개발도구 (Docker)
@@ -57,6 +60,10 @@
     * MahApp 여러가지 문제와 해결방법들
   * [다양한 템플릿 유형](https://chriskim10.tistory.com/4)
     * 이 외에도 WPF 사례들을 볼만하다
+
+### gRPC
+* [Keep Dotnet Core Grpc Server running as a console application?](https://stackoverflow.com/questions/45989148/keep-dotnet-core-grpc-server-running-as-a-console-application)
+  * .NET에서 gRPC를 지원하는 것으로 변경됨. standalone App에서 서버 실행하는 방법이 필요함
 
 ### MongoDB
 * [알아보자](https://bartkim.github.io/post/mongodb/features)
