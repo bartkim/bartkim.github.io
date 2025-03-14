@@ -10,6 +10,8 @@
 * [CMake: Generator](_posts/cmake/generate.md)
 * [BUILD gflags in VS2019](post/build_gflags.md)
 
+* [SW Popular Quotes](post/sw_architecture/quotes.md)
+
 # 즐겨찾기
 ### C++
 * [const& , & and && specifiers for member functions in C++](https://stackoverflow.com/questions/28066777/const-and-specifiers-for-member-functions-in-c)
