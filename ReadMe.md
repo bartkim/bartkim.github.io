@@ -11,6 +11,7 @@
 * [BUILD gflags in VS2019](post/build_gflags.md)
 
 * [SW Popular Quotes](post/sw_architecture/quotes.md)
+* [Design Pattern](post/sw_architecture/design_pattern.md)
 
 # 즐겨찾기
 ### C++
