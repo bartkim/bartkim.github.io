@@ -142,4 +142,16 @@ var store = [{
         "tags": [],
         "url": "/sw/database/nosql",
         "teaser": null
+      },{
+        "title": "jekyll 설치 및 실행",
+        "excerpt":"github를 사용한 블로그를 개설하고 글 작성을 위해 PC에서 clone을 설치하였다.   설치      WSL에 ruby를 설치            웹 자료를 참고함           gem을 통해 jekyll 및 bundler 설치   gem install jekyll bundler   실행   bundle exec jekyll serve  ","categories": ["sw"],
+        "tags": [],
+        "url": "/sw/jekyll_install",
+        "teaser": null
+      },{
+        "title": "Python jupyter lab 설치",
+        "excerpt":"설치  python -m pip install jupyterlab   실행  jupyter lab   다른 virtual env 추가      추가할 virutal env를 활성화 하고, ipykernel을 설치한다.     python -m pip install ipykernel           virtual env에서 아래 명령어로 커널을 추가한다. 윈도우즈 환경에서는 다른 블로그에서 안내한 –user 옵션등이 불필요하였다.     pyhon -m ipykernel --name [가상환경폴더]          ","categories": ["python"],
+        "tags": [],
+        "url": "/sw/python/jupyter_lap_install",
+        "teaser": null
       }]
