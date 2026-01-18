@@ -23,6 +23,12 @@ var store = [{
         "url": "/sw/gflags_cli",
         "teaser": null
       },{
+        "title": "oat++ (웹/백엔드)",
+        "excerpt":"임베디드 시스템에서 웹서비스를 제공하기 위해 가볍고 네이티브 모듈들과 쉽게 결합할 수 있는 솔루션으로 검토   Source     https://github.com/oatpp/oatpp   Jetson 등 임베디드를 위한 빌드  cmake \\ \t-DCMAKE_BUILD_TYPE=Release \\ \t-DBUILD_SHARED_LIBS=off \\ \t-DOATPP_BUILD_TESTS=off \\ \t-DOATPP_LINK_ATOMIC=on \\ \t-DOATPP_DISABLE_ENV_OBJECT_COUNTERS=on \\ \t-DOATPP_DISABLE_POOL_ALLOCATIONS=on \\ \t-DOATPP_COMPAT_BUILD_NO_THREAD_LOCAL=off   Windows를 위한 빌드  ","categories": ["sw"],
+        "tags": [],
+        "url": "/sw/oatpp_build",
+        "teaser": null
+      },{
         "title": "Lazy Evaluation",
         "excerpt":"value가 필요할 때까지 평가(혹은 계산)하지 않는다.   함수형 프로그래밍이나 Tensorflow 예전 버전에서 모델을 구성할 때 접하게 되었다.   반대되는 말은 Eager Evaluation 이다.   Pros  eager evaluation에 비해서 step이 늘어나지는 않으며, 특정 경우에는 eager evaluation 보다 짧아진다.   Cons  메모리 공간을 더 차지할 수 있다. 또한 연산 과정을 이해하기 어려울 수 있다.  ","categories": ["sw"],
         "tags": [],

@@ -10,8 +10,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>gflags 빌드하기 - SleepyBart Hislog</title>
-<meta name="description" content="C++ commandline flag processor">
+<!-- begin _includes/seo.html --><title>oat++ (웹/백엔드) - SleepyBart Hislog</title>
+<meta name="description" content="oat++ 빌드">
 
 
   <meta name="author" content="SleepyBart">
@@ -23,11 +23,11 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="SleepyBart Hislog">
-<meta property="og:title" content="gflags 빌드하기">
-<meta property="og:url" content="http://localhost:4000/sw/gflags_cli">
+<meta property="og:title" content="oat++ (웹/백엔드)">
+<meta property="og:url" content="http://localhost:4000/sw/oatpp_build">
 
 
-  <meta property="og:description" content="C++ commandline flag processor">
+  <meta property="og:description" content="oat++ 빌드">
 
 
 
@@ -46,7 +46,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/sw/gflags_cli">
+<link rel="canonical" href="http://localhost:4000/sw/oatpp_build">
 
 
 
@@ -248,8 +248,8 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="gflags 빌드하기">
-    <meta itemprop="description" content="C++ commandline flag processor">
+    <meta itemprop="headline" content="oat++ (웹/백엔드)">
+    <meta itemprop="description" content="oat++ 빌드">
     <meta itemprop="datePublished" content="1900-01-01T00:01:44+08:27">
     
 
@@ -257,7 +257,7 @@
       
         <header>
           <h1 id="page-title" class="page__title" itemprop="headline">
-            <a href="http://localhost:4000/sw/gflags_cli" itemprop="url">gflags 빌드하기
+            <a href="http://localhost:4000/sw/oatpp_build" itemprop="url">oat++ (웹/백엔드)
 </a>
           </h1>
           
@@ -286,42 +286,25 @@
 
       <section class="page__content" itemprop="text">
         
-          <aside class="sidebar__right sticky">
-            <nav class="toc">
-              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#빌드하기">빌드하기</a><ul><li><a href="#1-cmake를-통해서-vs2019-프로젝트-파일을-생성">1. CMake를 통해서 VS2019 프로젝트 파일을 생성</a></li><li><a href="#2-static-library를-사용하기-위해서-gflags_static-프로젝트를-사용">2. static library를 사용하기 위해서 gflags_static 프로젝트를 사용</a></li><li><a href="#3-프로젝트-파일에서-절대-경로로-된-부분을-projectdir을-기준으로-변경">3. 프로젝트 파일에서 절대 경로로 된 부분을 $(ProjectDir)을 기준으로 변경</a></li><li><a href="#4-library의-사용-모듈과-link시-아래-에러-발생">4. library의 사용 모듈과 link시 아래 에러 발생</a><ul><li><a href="#해결방법">해결방법</a></li></ul></li></ul></li></ul></li></ul>
-            </nav>
-          </aside>
-        
-        <p>gflags는 실행파일을 실행할 때 commandline으로 flag를 설정하기 위한 C++ 라이브러리이다.</p>
+        <p>임베디드 시스템에서 웹서비스를 제공하기 위해 가볍고 네이티브 모듈들과 쉽게 결합할 수 있는 솔루션으로 검토</p>
 
+<h2 id="source">Source</h2>
 <ul>
-  <li><a href="https://github.com/gflags/gflags">github</a></li>
-  <li><a href="https://gflags.github.io/gflags/">project page</a></li>
+  <li><a href="https://github.com/oatpp/oatpp">https://github.com/oatpp/oatpp</a></li>
 </ul>
 
-<p>참고로 윈도우즈에서 메모리 누수를 탐지하기 위한 디버깅 도구와는 다른 도구이다.</p>
+<h2 id="jetson-등-임베디드를-위한-빌드">Jetson 등 임베디드를 위한 빌드</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cmake <span class="se">\</span>
+	<span class="nt">-DCMAKE_BUILD_TYPE</span><span class="o">=</span>Release <span class="se">\</span>
+	<span class="nt">-DBUILD_SHARED_LIBS</span><span class="o">=</span>off <span class="se">\</span>
+	<span class="nt">-DOATPP_BUILD_TESTS</span><span class="o">=</span>off <span class="se">\</span>
+	<span class="nt">-DOATPP_LINK_ATOMIC</span><span class="o">=</span>on <span class="se">\</span>
+	<span class="nt">-DOATPP_DISABLE_ENV_OBJECT_COUNTERS</span><span class="o">=</span>on <span class="se">\</span>
+	<span class="nt">-DOATPP_DISABLE_POOL_ALLOCATIONS</span><span class="o">=</span>on <span class="se">\</span>
+	<span class="nt">-DOATPP_COMPAT_BUILD_NO_THREAD_LOCAL</span><span class="o">=</span>off
+</code></pre></div></div>
 
-<p>지금은 CMake + VC + ninja 를 사용하여 빌드하기에 그리 필요없는 정보이기는 하나 혹시 모를 경우를 대비하여 남겨둔다.</p>
-
-<p>CMake에서 Generator를 Visual Studio로 설정하여 사용할 때 발생한 문제에 대한 기록이다.</p>
-
-<h2 id="빌드하기">빌드하기</h2>
-
-<h4 id="1-cmake를-통해서-vs2019-프로젝트-파일을-생성">1. CMake를 통해서 VS2019 프로젝트 파일을 생성</h4>
-
-<h4 id="2-static-library를-사용하기-위해서-gflags_static-프로젝트를-사용">2. static library를 사용하기 위해서 gflags_static 프로젝트를 사용</h4>
-
-<h4 id="3-프로젝트-파일에서-절대-경로로-된-부분을-projectdir을-기준으로-변경">3. 프로젝트 파일에서 절대 경로로 된 부분을 $(ProjectDir)을 기준으로 변경</h4>
-
-<h4 id="4-library의-사용-모듈과-link시-아래-에러-발생">4. library의 사용 모듈과 link시 아래 에러 발생</h4>
-<blockquote>
-  <p>gflags_static.lib(gflags.obj) : error LNK2019: unresolved external symbol __imp_PathMatchSpecA referenced in function “public: class std::basic_string&lt;char,struct std::char_traits<char>,class std::allocator<char> &gt; __cdecl google::`anonymous namespace'::CommandLineFlagParser::ProcessOptionsFromStringLocked(class std::basic_string&lt;char,struct std::char_traits<char>,class std::allocator<char> &gt; const &amp;,enum google::FlagSettingMode)" (?ProcessOptionsFromStringLocked@CommandLineFlagParser@?A0xa4208b8f@google@@QEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV45@W4FlagSettingMode@3@@Z)</char></char></char></char></p>
-</blockquote>
-
-<h5 id="해결방법">해결방법</h5>
-<p>gflags_static 프로젝트에 링크할 라이브러리로 ‘shlwapi.lib’을 추가한다</p>
-
+<h2 id="windows를-위한-빌드">Windows를 위한 빌드</h2>
 
         
       </section>
@@ -355,21 +338,21 @@
       <section class="page__share">
   <h4 class="page__share-title">Share on</h4>
 
-  <a href="https://twitter.com/intent/tweet?text=gflags+%EB%B9%8C%EB%93%9C%ED%95%98%EA%B8%B0%20http%3A%2F%2Flocalhost%3A4000%2Fsw%2Fgflags_cli" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=oat%2B%2B+%28%EC%9B%B9%2F%EB%B0%B1%EC%97%94%EB%93%9C%29%20http%3A%2F%2Flocalhost%3A4000%2Fsw%2Foatpp_build" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fsw%2Fgflags_cli" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fsw%2Foatpp_build" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/sw/gflags_cli" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/sw/oatpp_build" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/sw/url" class="pagination--pager" title="URL 체계">Previous</a>
+      <a href="/sw/gflags_cli" class="pagination--pager" title="gflags 빌드하기">Previous</a>
     
     
-      <a href="/sw/oatpp_build" class="pagination--pager" title="oat++ (웹/백엔드)">Next</a>
+      <a href="/sw/lazy_evaluation" class="pagination--pager" title="Lazy Evaluation">Next</a>
     
   </nav>
 
